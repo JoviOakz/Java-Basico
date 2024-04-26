@@ -8,7 +8,8 @@ public abstract class Main {
 
         // Contador cont = new Contador(0);
         // Contador novoContador = new Contador(0);
-        Retangulo ret = new Retangulo();
+        // Retangulo ret = new Retangulo();
+        // Retangulo novoRetangulo = new Retangulo();
 
         // Exercicio 1
         // while (op != 0) {
@@ -61,18 +62,39 @@ public abstract class Main {
         // }
 
         // Exercicio 3
-        System.out.println("Insira o valor do lado 1: ");
-        int value1 = sc.nextInt();
-        sc.nextLine();
+        // System.out.print("Insira o valor do lado 1: ");
+        // int value1 = sc.nextInt();
+        // sc.nextLine();
 
-        System.out.println("Agora insira o valor do lado 2: ");
-        int value2 = sc.nextInt();
-        sc.nextLine();
+        // System.out.print("Agora insira o valor do lado 2: ");
+        // int value2 = sc.nextInt();
+        // sc.nextLine();
 
-        ret.setLado1((double)value1);
-        ret.setLado2((double)value2);
+        // ret.setLado1((double)value1);
+        // ret.setLado2((double)value2);
 
+        // System.out.println("Area: " + ret.calcularArea() + "cm");
+        // System.out.println("Perimetro: " + ret.calcularPerimetro() + "cm");
 
+        // Exercicio 4
+        // int value1 = 10;
+        // int value2 = 5;
+
+        // novoRetangulo.setLado1((double)value1);
+        // novoRetangulo.setLado2((double)value2);
+
+        // System.out.println("Area: " + novoRetangulo.calcularArea() + "cm");
+        // System.out.println("Perimetro: " + novoRetangulo.calcularPerimetro() + "cm");
+
+        // value2 = 7;
+
+        // novoRetangulo.setLado2((double)value2);
+
+        // System.out.println("");
+        // System.out.println("Area: " + novoRetangulo.calcularArea() + "cm");
+        // System.out.println("Perimetro: " + novoRetangulo.calcularPerimetro() + "cm");
+
+        // Exercicio 5
 
         sc.close();
     }

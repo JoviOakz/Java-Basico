@@ -11,6 +11,17 @@ public class Retangulo {
     // + 2*lado2). Em
     // seguida, deve escreve o valor do perímetro na tela.
 
+    // Exercicio 4
+    // F.U.P que instancie a classe Retangulo do exercício anterior, criando um objeto
+    // novoRetangulo do tipo Retangulo. Depois o programa deve realizar as seguintes ações:
+    // 7) Atribua o valor 10 ao atributo lado1.
+    // 8) Atribua o valor 5 ao atributo lado2.
+    // 9) Chame o método calcularArea.
+    // 10) Chame o método calcularPerimetro.
+    // 11) Atribua o valor 7 ao atributo lado2.
+    // 12) Chame o método calcularArea.
+    // 13) Chame o método calcularPerimetro.
+
     private Double lado1;
     private Double lado2;
     private Double area;
