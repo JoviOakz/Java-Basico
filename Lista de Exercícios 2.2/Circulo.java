@@ -1,30 +1,35 @@
-public class Circulo {
+public class Circulo extends FormaGeometrica {
 
-    private Double raio;
-    private Double area;
-    private Double perimetro;
+    private Float raio;
+    private Float area;
+    private Float perimetro;
 
-    Circulo() {
+    Circulo(String cor, float raio) {
+        this.cor = cor;
         this.raio = null;
     }
 
-    public Double getRaio() {
+    public Float getRaio() {
         return this.raio;
     }
 
-    public void setRaio(Double raio_value) {
+    public void setRaio(Float raio_value) {
         this.raio = raio_value;
     }
 
-    public void calcularArea() {
-        area = raio * raio * 3.14;
+    public float calcularArea() {
+        area = (float) 3.14 * raio * raio;
 
-        System.out.println("Area do circulo: " + area);
+        return area;
     }
 
-    public void calcularPerimetro() {
-        perimetro = 2 * 3.14 * raio;
+    public float calcularPerimetro() {
+        perimetro = 2 * (float) 3.14 * raio;
 
-        System.out.println("Perimetro do circulo: " + perimetro);
+        return perimetro;
+    }
+
+    public String toString() {
+        return "Circulo de cor " + this.cor + " e raio " + this.raio;
     }
 }

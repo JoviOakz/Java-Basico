@@ -40,5 +40,13 @@ public class FormaGeometrica {
     // b. Calcular o perímetro total (soma de todos os perímetros das formas)
     // c. Calcular a área total (soma de todas as áreas das formas)
 
-    
+    public String cor;
+
+    public String getCor() {
+        return this.cor;
+    }
+
+    public void setCor(String new_cor) {
+        this.cor = new_cor;
+    }
 }
