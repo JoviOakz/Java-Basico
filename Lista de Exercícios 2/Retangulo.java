@@ -1,6 +1,6 @@
 public class Retangulo {
 
-    // Exercicio 3
+    // Exercicio 3 e 4
     // Crie uma classe Retangulo que obedeça à descrição abaixo:
     // • A classe possui os atributos lado1, lado2, area e perimetro, todos do tipo
     // double.
@@ -11,9 +11,10 @@ public class Retangulo {
     // + 2*lado2). Em
     // seguida, deve escreve o valor do perímetro na tela.
 
-    // Exercicio 4
-    // F.U.P que instancie a classe Retangulo do exercício anterior, criando um objeto
-    // novoRetangulo do tipo Retangulo. Depois o programa deve realizar as seguintes ações:
+    // F.U.P que instancie a classe Retangulo do exercício anterior, criando um
+    // objeto
+    // novoRetangulo do tipo Retangulo. Depois o programa deve realizar as seguintes
+    // ações:
     // 7) Atribua o valor 10 ao atributo lado1.
     // 8) Atribua o valor 5 ao atributo lado2.
     // 9) Chame o método calcularArea.
@@ -31,24 +32,25 @@ public class Retangulo {
         this.lado1 = lado1;
         this.lado2 = lado2;
     }
+
     Retangulo() {
         this.lado1 = null;
         this.lado2 = null;
     }
 
-    public Double getLado1(){
+    public Double getLado1() {
         return this.lado1;
     }
 
-    public void setLado1(Double size){
+    public void setLado1(Double size) {
         this.lado1 = size;
     }
 
-    public Double getLado2(){
+    public Double getLado2() {
         return this.lado2;
     }
 
-    public void setLado2(Double size){
+    public void setLado2(Double size) {
         this.lado2 = size;
     }
 
