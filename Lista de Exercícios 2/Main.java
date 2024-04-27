@@ -148,8 +148,5 @@ public abstract class Main {
         // System.out.println("Aluno com maior media: " + aluno[alunoNotaAlta].getNome());
 
         // sc.close();
-
-        // Exercicio 13 e 14
-        
     }
 }
