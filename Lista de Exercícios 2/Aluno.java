@@ -35,12 +35,12 @@ public class Aluno {
     private float nota1;
     private float nota2;
 
-    Aluno(int matricula, String nome, float nota1, float nota2) {
+    Aluno(int matricula, String nome, float nota1, float nota2, int faltas) {
         this.matricula = matricula;
         this.nome = nome;
         this.nota1 = nota1;
         this.nota2 = nota2;
-        this.faltas = 0;
+        this.faltas = faltas;
     }
 
     public int getMatricula() {
