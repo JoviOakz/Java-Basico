@@ -1,3 +1,3 @@
-public class Triangulo {
+public class Triangulo extends FormaGeometrica {
     
 }

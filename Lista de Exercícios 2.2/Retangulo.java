@@ -1,45 +1,43 @@
-public class Retangulo {
+public class Retangulo extends FormaGeometrica {
 
-    private Double lado1;
-    private Double lado2;
-    private Double area;
-    private Double perimetro;
+    private float largura;
+    private float altura;
 
-    Retangulo(Double lado1, Double lado2) {
-        this.lado1 = lado1;
-        this.lado2 = lado2;
+    Retangulo(String cor, float largura, float altura) {
+        this.cor = cor;
+        this.largura = largura;
+        this.altura = altura;
     }
 
-    Retangulo() {
-        this.lado1 = null;
-        this.lado2 = null;
+    public float getLargura() {
+        return this.largura;
     }
 
-    public Double getLado1() {
-        return this.lado1;
+    public void setLargura(float new_largura) {
+        this.largura = new_largura;
     }
 
-    public void setLado1(Double size) {
-        this.lado1 = size;
+    public float getAltura() {
+        return this.altura;
     }
 
-    public Double getLado2() {
-        return this.lado2;
+    public void setAltura(float new_altura) {
+        this.altura = new_altura;
     }
 
-    public void setLado2(Double size) {
-        this.lado2 = size;
-    }
-
-    public Double calcularArea() {
-        area = lado1 * lado2;
+    public float calcularArea() {
+        float area = largura * altura;
 
         return area;
     }
 
-    public Double calcularPerimetro() {
-        perimetro = (2 * lado1) + (2 * lado2);
+    public float calcularPerimetro() {
+        float perimetro = (2 * largura) + (2 * altura);
 
         return perimetro;
+    }
+
+    public String toString() {
+        return "Retangulo de cor " + this.cor + ", largura " + this.largura + " e altura " + this.altura;
     }
 }
