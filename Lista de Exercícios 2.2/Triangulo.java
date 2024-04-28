@@ -5,7 +5,7 @@ public class Triangulo extends FormaGeometrica {
     private float lado3;
 
     Triangulo(String cor, float lado1, float lado2, float lado3) {
-        this.cor = cor;
+        super(cor);
         this.lado1 = lado1;
         this.lado2 = lado2;
         this.lado3 = lado3;
@@ -35,6 +35,7 @@ public class Triangulo extends FormaGeometrica {
         this.lado3 = new_lado3;
     }
 
+    @Override
     public float calcularArea() {
         float perimetro = calcularPerimetro();
         double area = Math.sqrt(perimetro * (perimetro - lado1) * (perimetro - lado2) * (perimetro - lado3));
@@ -42,6 +43,7 @@ public class Triangulo extends FormaGeometrica {
         return (float) area;
     }
 
+    @Override
     public float calcularPerimetro() {
         float perimetro = lado1 + lado2 + lado3;
 

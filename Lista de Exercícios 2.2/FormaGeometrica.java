@@ -1,4 +1,4 @@
-public class FormaGeometrica {
+public abstract class FormaGeometrica {
 
     // Exercicio 13 e 14
     // : Crie as classes FormaGeometrica (abstrata), Circulo, Retângulo e Triangulo
@@ -40,7 +40,11 @@ public class FormaGeometrica {
     // b. Calcular o perímetro total (soma de todos os perímetros das formas)
     // c. Calcular a área total (soma de todas as áreas das formas)
 
-    public String cor;
+    protected String cor;
+
+    FormaGeometrica(String cor) {
+        this.cor = cor;
+    }
 
     public String getCor() {
         return this.cor;
@@ -49,4 +53,7 @@ public class FormaGeometrica {
     public void setCor(String new_cor) {
         this.cor = new_cor;
     }
+
+    public abstract float calcularArea();
+    public abstract float calcularPerimetro();
 }

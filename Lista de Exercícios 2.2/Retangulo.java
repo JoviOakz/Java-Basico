@@ -4,7 +4,7 @@ public class Retangulo extends FormaGeometrica {
     private float altura;
 
     Retangulo(String cor, float largura, float altura) {
-        this.cor = cor;
+        super(cor);
         this.largura = largura;
         this.altura = altura;
     }
@@ -25,12 +25,14 @@ public class Retangulo extends FormaGeometrica {
         this.altura = new_altura;
     }
 
+    @Override
     public float calcularArea() {
         float area = largura * altura;
 
         return area;
     }
 
+    @Override
     public float calcularPerimetro() {
         float perimetro = (2 * largura) + (2 * altura);
 

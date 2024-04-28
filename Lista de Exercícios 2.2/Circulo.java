@@ -3,8 +3,8 @@ public class Circulo extends FormaGeometrica {
     private float raio;
 
     Circulo(String cor, float raio) {
-        this.cor = cor;
-        this.raio = 0;
+        super(cor);
+        this.raio = raio;
     }
 
     public float getRaio() {
@@ -15,12 +15,14 @@ public class Circulo extends FormaGeometrica {
         this.raio = raio_value;
     }
 
+    @Override
     public float calcularArea() {
         float area = (float) 3.14 * raio * raio;
 
         return area;
     }
 
+    @Override
     public float calcularPerimetro() {
         float perimetro = 2 * (float) 3.14 * raio;
 
