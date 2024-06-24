@@ -46,6 +46,7 @@ public class AtendenteCaixa {
                 atendente.setCpf(cpf);
                 atendente.setCargo(cargo);
                 atendente.setDt_admissao(dt_admissao);
+                
                 return true;
             }
         }

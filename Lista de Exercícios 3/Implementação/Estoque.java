@@ -7,15 +7,28 @@ public class Estoque {
         this.produtos = produtos;
     }
 
-    public void consultarProduto(int id_produto) {
-
+    public Produto consultarProduto(int id_produto) {
+        for (Produto produto : produtos) {
+            if (produto.getId_produto() == id_produto) {
+                return produto;
+            }
+        }
+        
+        return null;
     }
 
-    public void registrarBaixa(Produto produto, int quantidade) {
-
+    public boolean registrarBaixa(Produto produto, int quantidade) {
     }
 
     public void emitirAlerta(Produto produto) {
+        System.out.println("Alerta: Produto " + produto.getNome() + " está abaixo do nível mínimo de estoque.");
+    }
 
+    public List<Produto> getProdutos() {
+        return produtos;
+    }
+
+    public void setProdutos(List<Produto> produtos) {
+        this.produtos = produtos;
     }
 }

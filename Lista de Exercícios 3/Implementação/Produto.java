@@ -26,4 +26,60 @@ public class Produto {
     public void registrarBaixa() {
         
     }
+
+    public int getId_produto() {
+        return id_produto;
+    }
+
+    public void setId_produto(int id_produto) {
+        this.id_produto = id_produto;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public Double getPreco_unitario() {
+        return preco_unitario;
+    }
+
+    public void setPreco_unitario(Double preco_unitario) {
+        this.preco_unitario = preco_unitario;
+    }
+
+    public int getQty_estoque() {
+        return qty_estoque;
+    }
+
+    public void setQty_estoque(int qty_estoque) {
+        this.qty_estoque = qty_estoque;
+    }
+
+    public Fornecedor getFornecedor_principal() {
+        return fornecedor_principal;
+    }
+
+    public void setFornecedor_principal(Fornecedor fornecedor_principal) {
+        this.fornecedor_principal = fornecedor_principal;
+    }
+
+    public List<Fornecedor> getFornecedores_alternativos() {
+        return fornecedores_alternativos;
+    }
+
+    public void setFornecedores_alternativos(List<Fornecedor> fornecedores_alternativos) {
+        this.fornecedores_alternativos = fornecedores_alternativos;
+    }
 }

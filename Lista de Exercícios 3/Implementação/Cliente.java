@@ -43,6 +43,7 @@ public class Cliente {
                 cliente.setTelefone(telefone);
                 cliente.setCpf(cpf);
                 cliente.setDt_nascimento(dt_nascimento);
+                
                 return true;
             }
         }
