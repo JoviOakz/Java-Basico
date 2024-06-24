@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class AtendenteCaixa {
+public class AtendenteCaixa implements Identificador {
     private int id_caixa;
     private String nome;
     private String endereco;
@@ -52,6 +52,11 @@ public class AtendenteCaixa {
         }
 
         return false;
+    }
+
+    @Override
+    public int getId() {
+        return this.id_caixa;
     }
 
     public int getId_caixa() {

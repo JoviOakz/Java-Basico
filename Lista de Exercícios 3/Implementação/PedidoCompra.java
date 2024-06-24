@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class PedidoCompra {
+public class PedidoCompra implements Identificador {
     private int id_produto;
     private Produto produto;
     private Fornecedor fornecedor;
@@ -26,6 +26,11 @@ public class PedidoCompra {
     public void registrarPedido() {
         pedidos.add(this);
         System.out.println("Pedido registrado: " + this.toString());
+    }
+
+    @Override
+    public int getId() {
+        return this.id_produto;
     }
 
     public int getId_produto() {

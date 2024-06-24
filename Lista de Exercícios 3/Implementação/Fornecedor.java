@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Fornecedor {
+public class Fornecedor implements Identificador {
     private int id_fornecedor;
     private String nome;
     private String endereco;
@@ -45,6 +45,11 @@ public class Fornecedor {
         }
 
         return false;
+    }
+
+    @Override
+    public int getId() {
+        return this.id_fornecedor;
     }
 
     public int getId_fornecedor() {

@@ -1,7 +1,7 @@
 import java.util.Date;
 import java.util.List;
 
-public class Venda {
+public class Venda implements Identificador {
     private int id_venda;
     private Cliente cliente;
     private AtendenteCaixa atendente;
@@ -54,6 +54,11 @@ public class Venda {
 
         System.out.println("Valor Total: R$ " + this.valor_total);
         System.out.println("Forma de Pagamento: " + this.forma_pagamento);
+    }
+
+    @Override
+    public int getId() {
+        return this.id_venda;
     }
 
     public int getId_venda() {

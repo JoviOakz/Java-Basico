@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Cliente {
+public class Cliente implements Identificador {
     private int id_cliente;
     private String nome;
     private String endereco;
@@ -34,7 +34,7 @@ public class Cliente {
         
         return null;
     }
-
+    
     public static boolean atualizarDados(int id_cliente, String nome, String endereco, int telefone, int cpf, Date dt_nascimento) {
         for (Cliente cliente : clientes) {
             if (cliente.getId_cliente() == id_cliente) {
@@ -47,8 +47,13 @@ public class Cliente {
                 return true;
             }
         }
-
+        
         return false;
+    }
+    
+    @Override
+    public int getId() {
+        return this.id_cliente;
     }
 
     public int getId_cliente() {

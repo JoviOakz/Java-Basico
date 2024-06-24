@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Produto {
+public class Produto implements Identificador {
     private int id_produto;
     private String nome;
     private String descricao;
@@ -31,6 +31,11 @@ public class Produto {
             qty_estoque -= quantidade;
             System.out.println("Baixa registrada com sucesso. Quantidade restante em estoque: " + qty_estoque);
         }
+    }
+
+    @Override
+    public int getId() {
+        return this.id_produto;
     }
 
     public int getId_produto() {
