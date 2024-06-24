@@ -18,6 +18,20 @@ public class Estoque {
     }
 
     public boolean registrarBaixa(Produto produto, int quantidade) {
+        if (produto != null && quantidade > 0) {
+            if (produto.getQty_estoque() >= quantidade) {
+                produto.setQty_estoque(produto.getQty_estoque() - quantidade);
+                if (produto.getQty_estoque() < 10) {  // Assuming 10 as the minimum stock threshold
+                    emitirAlerta(produto);
+                }
+                return true;
+            } else {
+                System.out.println("Erro: quantidade solicitada excede o estoque disponível para o produto " + produto.getNome());
+            }
+        } else {
+            System.out.println("Erro: produto não encontrado ou quantidade inválida.");
+        }
+        return false;
     }
 
     public void emitirAlerta(Produto produto) {
