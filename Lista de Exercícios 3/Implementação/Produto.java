@@ -1,13 +1,13 @@
 import java.util.List;
 
 public class Produto {
-    int id_produto;
-    String nome;
-    String descricao;
-    Double preco_unitario;
-    int qty_estoque;
-    Fornecedor fornecedor_principal;
-    List<Fornecedor> fornecedores_alternativos;
+    private int id_produto;
+    private String nome;
+    private String descricao;
+    private Double preco_unitario;
+    private int qty_estoque;
+    private Fornecedor fornecedor_principal;
+    private List<Fornecedor> fornecedores_alternativos;
 
     Produto(int id_produto, String nome, String descricao, Double preco_unitario, int qty_estoque, Fornecedor fornecedor_principal, List<Fornecedor> fornecedores_alternativos) {
         this.id_produto = id_produto;

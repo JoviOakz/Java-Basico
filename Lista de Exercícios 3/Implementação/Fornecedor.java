@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Fornecedor {
-    int id_fornecedor;
-    String nome;
-    String endereco;
-    String telefone;
-    String cnpj;
+    private int id_fornecedor;
+    private String nome;
+    private String endereco;
+    private String telefone;
+    private String cnpj;
 
     Fornecedor(int id_fornecedor, String nome, String endereco, String telefone, String cnpj) {
         this.id_fornecedor = id_fornecedor;

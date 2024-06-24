@@ -1,12 +1,15 @@
+import java.util.Date;
 import java.util.List;
 
 public class Venda {
-    int id_venda;
-    Cliente cliente;
-    AtendenteCaixa atendente;
-    List<Produto> produtos;
-    Double valor_total;
-    String forma_pagamento;
+    private int id_venda;
+    private Cliente cliente;
+    private AtendenteCaixa atendente;
+    private List<Produto> produtos;
+    private Double valor_total;
+    private String forma_pagamento;
+    private Date data;
+
 
     Venda(int id_venda, Cliente cliente, AtendenteCaixa atendente, List<Produto> produtos, Double valor_total, String forma_pagamento) {
         this.id_venda = id_venda;   
@@ -99,5 +102,13 @@ public class Venda {
 
     public void setForma_pagamento(String forma_pagamento) {
         this.forma_pagamento = forma_pagamento;
+    }
+
+    public Date getData() {
+        return data;
+    }
+
+    public void setData(Date data) {
+        this.data = data;
     }
 }

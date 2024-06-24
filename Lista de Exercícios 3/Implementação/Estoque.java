@@ -1,7 +1,7 @@
 import java.util.List;
 
 public class Estoque {
-    List<Produto> produtos;
+    private List<Produto> produtos;
 
     Estoque(List<Produto> produtos) {
         this.produtos = produtos;

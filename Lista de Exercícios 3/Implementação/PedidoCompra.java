@@ -3,11 +3,11 @@ import java.util.Date;
 import java.util.List;
 
 public class PedidoCompra {
-    int id_produto;
-    Produto produto;
-    Fornecedor fornecedor;
-    int quantidade;
-    Date previsao_entrega;
+    private int id_produto;
+    private Produto produto;
+    private Fornecedor fornecedor;
+    private int quantidade;
+    private Date previsao_entrega;
 
     private static List<PedidoCompra> pedidos = new ArrayList<>();
 

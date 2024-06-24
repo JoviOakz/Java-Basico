@@ -3,13 +3,13 @@ import java.util.Date;
 import java.util.List;
 
 public class AtendenteCaixa {
-    int id_caixa;
-    String nome;
-    String endereco;
-    int telefone;
-    int cpf;
-    String cargo;
-    Date dt_admissao;
+    private int id_caixa;
+    private String nome;
+    private String endereco;
+    private int telefone;
+    private int cpf;
+    private String cargo;
+    private Date dt_admissao;
 
     private static List<AtendenteCaixa> atendentes = new ArrayList<>();
 

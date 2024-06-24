@@ -3,12 +3,12 @@ import java.util.Date;
 import java.util.List;
 
 public class Cliente {
-    int id_cliente;
-    String nome;
-    String endereco;
-    int telefone;
-    int cpf;
-    Date dt_nascimento;
+    private int id_cliente;
+    private String nome;
+    private String endereco;
+    private int telefone;
+    private int cpf;
+    private Date dt_nascimento;
 
     private static List<Cliente> clientes = new ArrayList<>();
 

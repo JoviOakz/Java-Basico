@@ -3,7 +3,7 @@ import java.util.Date;
 import java.util.List;
 
 public class HistoricoCompras {
-    List<Venda> compras;
+    private List<Venda> compras;
 
     HistoricoCompras(List<Venda> compras) {
         this.compras = compras;
