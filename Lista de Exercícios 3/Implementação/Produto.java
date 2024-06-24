@@ -20,11 +20,17 @@ public class Produto {
     }
 
     public void consultarEstoque() {
-
+        System.out.println("Produto: " + nome);
+        System.out.println("Quantidade em estoque: " + qty_estoque);
     }
 
-    public void registrarBaixa() {
-        
+    public void registrarBaixa(int quantidade) {
+        if (quantidade > qty_estoque) {
+            System.out.println("Erro: quantidade solicitada excede o estoque disponível.");
+        } else {
+            qty_estoque -= quantidade;
+            System.out.println("Baixa registrada com sucesso. Quantidade restante em estoque: " + qty_estoque);
+        }
     }
 
     public int getId_produto() {
