@@ -5,14 +5,14 @@ public class Fornecedor implements Identificador {
     private int id_fornecedor;
     private String nome;
     private String endereco;
-    private String telefone;
+    private int telefone;
     private String cnpj;
 
-    Fornecedor(int id_fornecedor, String nome, String endereco, String telefone, String cnpj) {
+    Fornecedor(int id_fornecedor, String nome, String endereco, int i, String cnpj) {
         this.id_fornecedor = id_fornecedor;
         this.nome = nome;
         this.endereco = endereco;
-        this.telefone = telefone;
+        this.telefone = i;
         this.cnpj = cnpj;
     }
 
@@ -32,7 +32,7 @@ public class Fornecedor implements Identificador {
         return null;
     }
 
-    public static boolean atualizarDados(int id_fornecedor, String nome, String endereco, String telefone, String cnpj) {
+    public static boolean atualizarDados(int id_fornecedor, String nome, String endereco, int telefone, String cnpj) {
         for (Fornecedor fornecedor : fornecedores) {
             if (fornecedor.getId_fornecedor() == id_fornecedor) {
                 fornecedor.setNome(nome);
@@ -76,11 +76,11 @@ public class Fornecedor implements Identificador {
         this.endereco = endereco;
     }
 
-    public String getTelefone() {
+    public int getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(String telefone) {
+    public void setTelefone(int telefone) {
         this.telefone = telefone;
     }
 

@@ -25,7 +25,7 @@ public class Cliente implements Identificador {
         clientes.add(cliente);
     }
 
-    public static Cliente consultarDados(int id_cliente) {
+    public Cliente consultarDados(int id_cliente) {
         for (Cliente cliente : clientes) {
             if (cliente.getId_cliente() == id_cliente) {
                 return cliente;
@@ -35,7 +35,7 @@ public class Cliente implements Identificador {
         return null;
     }
     
-    public static boolean atualizarDados(int id_cliente, String nome, String endereco, int telefone, int cpf, Date dt_nascimento) {
+    public boolean atualizarDados(int id_cliente, String nome, String endereco, int telefone, int cpf, Date dt_nascimento) {
         for (Cliente cliente : clientes) {
             if (cliente.getId_cliente() == id_cliente) {
                 cliente.setNome(nome);

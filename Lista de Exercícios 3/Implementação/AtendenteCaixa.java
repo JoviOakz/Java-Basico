@@ -27,7 +27,7 @@ public class AtendenteCaixa implements Identificador {
         atendentes.add(atendente);
     }
 
-    public static AtendenteCaixa consultarDados(int id_caixa) {
+    public AtendenteCaixa consultarDados(int id_caixa) {
         for (AtendenteCaixa atendente : atendentes) {
             if (atendente.getId_caixa() == id_caixa) {
                 return atendente;
